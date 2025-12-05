@@ -821,7 +821,8 @@
                         <td>' + (feature.properties['Pertek'] !== null ? autolinker.link(String(feature.properties['Pertek']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Alamat'] !== null ? autolinker.link(String(feature.properties['Alamat']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Alamat</th>\
+                        <td>' + (feature.properties['Alamat'] !== null ? autolinker.link(String(feature.properties['Alamat']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
